@@ -1,0 +1,68 @@
+.logo-icon {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: white;
+    background-image: url('../img/Logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color:  white;
+    z-index: 1000; /* supaya selalu di atas */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.home-page{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    background-color:  white
+}
+    
+.home-page-content-inner {
+    display: flex;
+    flex-direction: row;        /* bikin horizontal */
+    align-items: center;
+    justify-content: center;
+    gap: 30px;                  /* jarak kiri-kanan */
+}
+
+/* GAMBAR */
+.home-left-image {
+    width: 350px;
+    height: 350px;
+    background-image: url('../img/building.jpg'); /* atau building.jpg */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+/* TEKS */
+.home-right-text {
+    max-width: 550px;
+}
+
+.icon-round {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+}
+
+section {
+    scroll-margin-top: 50px; /* sesuaikan dengan tinggi header */
+}

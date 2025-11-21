@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahmat Company</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="logo-icon">
+            <a href="#home-page"></a>
+        </div>
+        
+        <nav class="flex gap-4">
+            <a href="#home-page" class="px-3 py-1 ">Home</a>
+            <a href="#our-profile-page" class="px-3 py-1">Our Profile</a>
+            <a href="#our-service-page" class="px-3 py-1">Our service</a>
+            <a href="#message-us-page" class="px-3 py-1 ">Message Us</a>
+        </nav>
+    </header>
+
+    <section id="home-page" class="py-30 bg-white mt-4">
+
+        <div class="home-page-content-inner">
+            
+            <!-- BAGIAN KIRI = GAMBAR -->
+            <div class="home-left-image"></div>
+    
+            <!-- BAGIAN KANAN = TEKS -->
+            <div class="home-right-text">
+                <h2 id="welcome-speech" class="text-2xl font-bold">Hi Guest, Welcome To Website</h2>
+    
+                <p class="mt-2">
+                    Rahmat Company adalah perusahaan yang bergerak di bidang layanan teknologi digital, 
+                    pengembangan sistem, dan solusi IT terintegrasi. Kami hadir untuk membantu bisnis dalam 
+                    menghadapi tantangan era transformasi digital melalui inovasi, efisiensi, dan teknologi 
+                    yang dapat diandalkan.
+                </p>
+                <p class="mt-2">
+                    Dengan tim profesional berpengalaman, Rahmat Company berfokus pada pengembangan aplikasi web, integrasi IoT, sistem berbasis cloud, dan solusi otomatisasi
+                    yang dirancang untuk meningkatkan efisiensi operasional perusahaan.
+                    Kami percaya bahwa teknologi bukan hanya alat, tetapi kunci utama untuk membuka peluang dan menciptakan keunggulan kompetitif.
+                </p>
+            </div>
+    
+        </div>
+    
+    </section>
+    
+    <section id="our-profile-page" class="py-16 bg-white mt-4">
+        <div class="text-center">
+            <h2 class="text-center text-xl font-bold mb-2">Visi</h2>
+            <p class="mt-2">Menjadi perusahaan teknologi terpercaya yang memberikan solusi digital inovatif untuk mendukung perkembangan bisnis di seluruh Indonesia</p>
+        </div>
+        <div class="text-center">
+            <h2 class="text-center text-xl font-bold mb-1 mt-10">Misi</h2>
+            <dt class="list-none ml-6">
+                <dd>Mengembangkan layanan IT yang berkualitas, efektif, dan mudah diimplementasikan.</dd>
+                <dd>Memberikan solusi digital yang aman, cepat, dan sesuai kebutuhan pelanggan.</dd>
+                <dd>Mendukung transformasi digital berbagai sektor industri melalui teknologi terkini.</dd>
+                <dd>Membangun hubungan jangka panjang dengan layanan profesional dan terpercaya.</dd>
+                <dd>Terus berinovasi mengikuti perkembangan teknologi.</dd>
+            </dt>
+        </div>
+    </section>
+
+
+    <!-- HEADQUARTER -->
+    <section  id="our-service-page" class="py-16 bg-white mt-4">
+        <h2 class="text-center text-xl font-bold mb-10">Our Service</h2>
+
+        <div class="flex justify-center gap-20">
+            <div class="text-center">
+                <div class="icon-round flex justify-center items-center text-4xl">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <p class="mt-3">Website</p>
+            </div>
+            
+            <div class="text-center">
+                <div class="icon-round flex justify-center items-center text-4xl">
+                    <i class="fa-brands fa-android"></i>
+                </div>
+                <p class="mt-3">Android</p>
+            </div>
+            
+            <div class="text-center">
+                <div class="icon-round flex justify-center items-center text-4xl">
+                    <i class="fa-solid fa-desktop"></i>
+                </div>
+                <p class="mt-3">Desktop</p>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- MESSAGE US -->
+    <section id="message-us-page" class="py-16 px-6 bg-white mt-4">
+        <h2 class="text-xl font-bold mb-6">Message Us</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <!-- FORM -->
+            <form id="messageForm" class="space-y-4">
+                <div>
+                    <label>Nama</label>
+                    <input type="text" id="name" class="w-full p-1 border rounded" />
+                </div>
+
+                <div>
+                    <label>Tanggal Lahir</label>
+                    <input type="date" id="dob" class="w-full p-1 border rounded" />
+                </div>
+
+                <div>
+                    <label>Jenis Kelamin</label>
+                    <div class="flex gap-2 mt-2">
+                        <label><input type="radio" name="gender" value="Laki-laki" /> Laki-laki</label>
+                        <label><input type="radio" name="gender" value="Perempuan" /> Perempuan</label>
+                    </div>
+                </div>
+
+                <div>
+                    <label>Pesan</label>
+                    <textarea id="message" class="w-full p-1 border rounded"></textarea>
+                </div>
+
+                <button type="button" id="submitBtn" class="w-full p-2 bg-gray-300 border rounded">
+                    Submit
+                </button>
+            </form>
+
+            <!-- OUTPUT PANEL -->
+            <div class="border p-4 rounded bg-gray-50">
+                <p><b>Current time:</b> <span id="currentTime"></span></p>
+                <br>
+                <p><b>Name:</b> <span id="outName"></span></p>
+                <p><b>Date of Birth:</b> <span id="outDob"></span></p>
+                <p><b>Gender:</b> <span id="outGender"></span></p>
+                <p><b>Message:</b> <span id="outMessage"></span></p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-center p-4 text-sm">
+        Created By Rahmat Subagja
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
